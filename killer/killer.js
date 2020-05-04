@@ -49,6 +49,7 @@ var killer_list = [
   "Teachable_hexDevourHope.png",
   "Teachable_hexHauntedGround.png",
   "Teachable_hexHuntressLullaby.png",
+  "Teachable_hexRetribution",
   "Teachable_hexRuin.png",
   "Teachable_hexTheThirdSeal.png",
   "Teachable_imAllEars.png",
