@@ -9,14 +9,38 @@
     <script type="text/javascript" src="killer.js"></script>
   </head>
   <body>
+    <div class="container">
+      <div id="perks">
+        <div class="perk">
+          <img class="img_base" src="../img/dbd-perks.png" alt="perk_img">
+          <img class="img_rand" src="" alt="perk_img">
+        </div>
+        <div class="perk">
+          <img class="img_base" src="../img/dbd-perks.png" alt="perk_img">
+          <img class="img_rand" src="" alt="perk_img">
+        </div>
+        <div class="perk">
+          <img class="img_base" src="../img/dbd-perks.png" alt="perk_img">
+          <img class="img_rand" src="" alt="perk_img">
+        </div>
+        <div class="perk">
+          <img class="img_base" src="../img/dbd-perks.png" alt="perk_img">
+          <img class="img_rand" src="" alt="perk_img">
+        </div>
+      </div>
+      <div id="perks_btn">
+        <button class="btn btn-danger" onclick="reset_perk_img(0)">Delete</button>
+        <button class="btn btn-danger" onclick="reset_perk_img(1)">Delete</button>
+        <button class="btn btn-danger" onclick="reset_perk_img(2)">Delete</button>
+        <button class="btn btn-danger" onclick="reset_perk_img(3)">Delete</button>
+      </div>
+    </div>
+
     <div id="carousel-container">
-        <div>
-            <ul id="carousel" class="animate">
-            </ul>
-        </div>
-        <div id="controls">
-            <span id="next"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/next.png"></span>
-        </div>
+      <div>
+        <ul id="carousel" class="animate">
+        </ul>
+      </div>
     </div>
     <button id="roll" class="btn btn-default" type="button" name="killer_roll" onClick="roll()">Roll</button>
   </body>

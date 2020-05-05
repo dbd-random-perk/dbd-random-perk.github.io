@@ -1,4 +1,36 @@
-#carousel-container{
+body {
+	overflow-x: hidden;
+}
+
+#perks {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+}
+	.perk {
+		height: 178px;
+	}
+		.perk > img {
+			position: relative;
+			width: 176px;
+			height: 178px;
+			z-index: 1;
+		}
+		.perk > img:last-child {
+			display: none;
+			top: -178px;
+			z-index: 2;
+		}
+
+#perks_btn {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 30px;
+}
+
+#carousel-container {
 	width: 300px;
 	height: 300px;
 	position: relative;
@@ -7,67 +39,38 @@
   border-radius: 10px;
   box-sizing: content-box;
 }
-#carousel-container > div:first-child{
-	/* overflow: hidden; */
-	max-width: 100%;
-	margin: 0;
-}
-#carousel{
-	position: relative;
-	width: 5000px;
-	height: 332px;
-    padding: 0;
-    margin: 0;
-}
+	#carousel-container > div:first-child {
+		max-width: 100%;
+		margin: 0;
+	}
+		#carousel {
+			position: relative;
+			width: 5000px;
+			height: 332px;
+	    padding: 0;
+	    margin: 0;
+		}
 
-.animate{
+.animate {
 	-webkit-transition-duration: .3s;
-    -moz-transition-duration: .3s;
-    -o-transition-duration: .3s;
-    transition-duration: .3s;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
+  -moz-transition-duration: .3s;
+  -o-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
 }
-.slide {
-    list-style: none;
-	position: relative;
-	float: left;
-	/* transform: translateX(-300px) */
-}
-
-.slide > img {
-  opacity: 0.5;
-  height: 300px;
-  width: 300px;
-}
-
-#controls{
-	position: absolute;
-    width: 620px;
-	top: calc( 50% - 25px);
-	margin: 0 -60px;
-}
-
-#controls span {
-	width: 50px;
-	cursor: pointer;
-	opacity: 0.4;
-}
-#controls span:hover {
-	opacity: 1;
-}
-
-#prev{
-	float: left;
-  display: none;
-}
-
-#next{
-	float: right;
-  display: none;
-}
+	.slide {
+	  list-style: none;
+		position: relative;
+		float: left;
+	}
+		.slide > img {
+		  opacity: 0.5;
+		  height: 300px;
+		  width: 300px;
+		}
 
 #roll {
 	display: block;
